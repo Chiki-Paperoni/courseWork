@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/catalog.css')}}">
+    <link rel="stylesheet" href="{{asset('css/bag.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+<div class="wrapper">
+
+        <div id="content">
+            <div id="header">
+                <span id="logo"></span>
+                <div><a href="{{ route('main') }}">Головна</a> </div>
+                <div><a href="{{ route('contacts') }}">Контакти</a> </div>
+                <div>FAQ</div>
+                <div id="shopbag"></div>
+            </div>
+            <div id="contacts">
+                <div class="line"></div>
+                <div class="links">
+                    <span>Тип</span>
+                    <span>Колекції</span>
+                    <span>Знижки</span>
+                </div>
+                <div class="line"></div>
+            </div>
+
+            <div class="photoes">
+                @foreach($items as $item)
+                <a href="{{ route('item') }}?id={{$item->id}}"><div class="photo">
+                    <img src='../public/img/{{$item->img}}' alt="">
+                    <span class="title">{{$item->category_name}}</span>
+                    <span class="type">{{$item->season_name}}</span>
+                    <span class="cost">$ {{$item->price??"unset"}}</span>
+                </div></a>
+                
+                @endforeach
+            </div>
+            <div class="paginator">{{$items->withQueryString()->links()}}</div>
+            
+            
+            <div id="scroll"></div>
+        </div>
+
+
+        <div class="" id="shopbag-wrapper">
+        
+        <div id="content">
+
+            <div class="bag-header">
+                <div id="bag-back-link"><div></div>До товару</div>
+                <div class="title">
+                    <span>Кошик</span>
+                    <span>Сума: $ <span id="totalcost"><span></span>
+                </div>
+            </div>
+
+            <div class="scrollbar style-15">
+                <div class="items">
+                    <div id="pointer"></div>
+                </div>
+            </div>
+
+            <a href="{{ route('SubmitOrder') }}"><div id="bag-add-btn">Oформити</div></a>
+        </div>
+    
+    </div>
+    </div>
+    <script src="{{asset('js/catalogBag.js')}}"></script>
+</body>
+</html>

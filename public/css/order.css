@@ -1,0 +1,158 @@
+body {
+    padding:0;
+    margin:0;
+    background-color: black;
+    height: 100vh;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 2px;
+}
+a {
+    text-decoration: none !important;    color: white;
+}
+.wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url( "../img/ret-3.png") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#content {
+    width: 65%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+/* .header {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    width: 100%;
+} */
+
+#back-link  {
+    display: flex;
+    align-items: center;
+    width: 75px;
+    cursor: pointer;
+}
+#back-link div {
+    margin-right: 4px;
+    background: url("../img/down-arrow-4.png") center center no-repeat;
+    height: 24px;
+    width: 16px;
+    background-size: cover;
+}
+
+
+
+
+#content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+input[type="text"],input[type="email"] {
+    color: white;
+    background: none;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+input::placeholder , input{
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+textarea::placeholder , textarea{
+    font-style: italic;
+    letter-spacing: 1px;
+    color: white;
+  }
+input::placeholder{
+    color: white;
+  }
+  textarea:focus, input:focus{
+    outline: none;
+}
+
+#form-submit {
+    font-style: normal;
+    border: 1px solid #5EFFC5;
+    padding: 8px 24px;
+    color: white;
+    height: 43px;
+    width: fit-content;
+    font-size: 20px;
+    margin-top: 30px;
+    transition: 0.1s;
+    cursor: pointer;
+    background: none;
+}
+/* #add-btn:hover {
+    border: 1px solid #00ffa3;
+    font-size: 24px;
+} */
+#form-submit:active:hover {
+    border: 1px solid #00ffa3;
+    font-size: 18px;
+}
+
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+#header div {
+    color: white;
+    font-size: 16px;
+
+}
+#logo {
+    height: 5vw;
+    width: 5vw;
+    background: url( "../img/logo-1.png") center center no-repeat;
+    background-size: cover;
+}
+
+#shopbag {
+    background: url("../img/shopping-bag-1.png") center center no-repeat;
+    height: 2.5vw;
+    width: 2.5vw;
+    background-size: cover;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+    #content {
+        width: 85%;
+    }
+    #content form {
+        width: 80%;
+    }
+    #shopbag {
+        height: 24px;
+        width: 24px;
+    }
+}

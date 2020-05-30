@@ -1,0 +1,147 @@
+body {
+    padding:0;
+    margin:0;
+    background-color: black;
+    height: 100vh;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 2px;
+}
+a {
+    text-decoration: none !important;    color: white;
+}
+.wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url( "../img/item-bg.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#content {
+    width: 65%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.header {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    width: 100%;
+}
+
+#back-link  {
+    display: flex;
+    align-items: center;
+    width: 75px;
+    cursor: pointer;
+}
+.caption {
+    font-size: 24px;
+}
+#back-link div {
+    margin-right: 4px;
+    background: url("../img/down-arrow-4.png") center center no-repeat;
+    height: 24px;
+    width: 16px;
+    background-size: cover;
+}
+.bagwrapp {
+    width: 75px;
+}
+#shopbag {
+    transition: 0.1s ease;
+    cursor: pointer;
+    background: url("../img/shopping-bag-1.png") center center no-repeat;
+    height: 32px;
+    width: 32px;
+    background-size: cover;
+}
+#shopbag:active:hover {
+    height: 28px;
+    width: 28px;
+}
+.type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 150px;
+}
+#collection,#price {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.info img{
+ /* height: 300px; */
+ width: 300px;
+ margin-right: 40px;
+}
+.description p{
+    color: white;
+    font-style: italic;
+}
+#add-btn  {
+    border: 1px solid #5EFFC5;
+    padding: 8px 24px;
+    color: white;
+    width: fit-content;
+    font-size: 20px;
+    margin-top: 30px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+/* #add-btn:hover {
+    border: 1px solid #00ffa3;
+    font-size: 24px;
+} */
+#add-btn:active:hover {
+    border: 1px solid #00ffa3;
+    font-size: 18px;
+}
+@media screen and (max-width:1000px) {
+    .info img{
+        height: 225px;
+        width: 225px;
+        margin-right: 0;
+        margin-top: 20px;
+       }
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .description p{
+       text-align: center;
+    }
+    .description{
+       margin-top: 20px;
+    }
+
+    .wrapper {
+        height: auto;
+    }
+    
+    #content {
+        width: 80%;
+    }
+
+    
+}

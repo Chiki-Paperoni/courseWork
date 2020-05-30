@@ -1,0 +1,147 @@
+body {
+    padding:0;
+    margin:0;
+    background-color: black;
+    height: 100vh;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 2px;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url( "../img/test.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none !important;    color: white;
+}
+#content {
+   
+    width: 55%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+#header div {
+    color: white;
+    font-size: 16px;
+
+}
+#logo {
+    height: 5vw;
+    width: 5vw;
+    background: url( "../img/logo-1.png") center center no-repeat;
+    background-size: cover;
+}
+
+#shopbag {
+    background: url("../img/shopping-bag-1.png") center center no-repeat;
+    height: 2.5vw;
+    width: 2.5vw;
+    background-size: cover;
+    cursor: pointer;
+}
+#contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.line {
+    width: 100%;
+    border-top: 1px solid #707070
+}
+.links {
+    margin: 10px 0;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+} 
+
+.photoes {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    margin-bottom: 36px;
+    padding: 0 10px;
+    height: 285px;
+    width: 220px;
+    overflow: hidden
+
+}
+.photo img {
+    width: 200px;
+    transition: 0.2s ease;
+    height: 200px;
+    margin-bottom: 4px;
+}
+.photo img:hover {
+    /* width: 220px;
+    height: 220px; */
+    transform: scale(1.1);
+}
+.photo span {
+    margin-top: 6px;
+}
+
+@media screen and (max-width:880px) {
+    .photoes {
+        justify-content: center;
+    }
+    #content {
+        width: 80%;
+    }
+    #logo {
+        height: 50px;
+        width: 50px;
+    }
+    #shopbag {
+        height: 25px;
+        width: 26px;
+    }
+}
+.paginator {
+    margin-bottom: 40px;
+}
+.paginator ul{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.paginator .page-link{
+    color: white !important;
+}
+.paginator ul li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    margin: 0 8px;
+}
+.paginator ul .active span{
+    color: #5effc5 !important;
+}
