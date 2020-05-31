@@ -21,7 +21,6 @@
                 <div class="links">
                     <span><a href="{{ route('catalog') }}">Каталог</a> </span>
                     <span><a href="{{ route('contacts') }}">Контакти</a> </span>
-                    <span>FAQ</span>
                 </div>
                 <div class="line"></div>
             </div>

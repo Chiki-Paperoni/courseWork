@@ -145,3 +145,35 @@ a {
 .paginator ul .active span{
     color: #5effc5 !important;
 }
+
+.links span {
+    cursor: pointer;
+}
+.dropdown {
+    transition: 0.2s ease;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+.dropdown a div {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 2px;
+    width: 160px;
+}
+.drop-item {
+    transition: 0.2s ease;
+}
+.drop-item:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#categories-dropp:hover #cat-dropdown {
+    display: flex !important;
+}
+#seasons-dropp:hover #seas-dropdown {
+    display: flex !important;
+}

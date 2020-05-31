@@ -15,6 +15,6 @@ class Letter extends Controller
         $text = $request->text;
 
         DB::table('letters')->insert([['email' => $email,'name' => $name,'letter' => $text]]);
-        return view("main");
+        return redirect('/');
     }
 }

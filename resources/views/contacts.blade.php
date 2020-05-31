@@ -17,7 +17,6 @@
                 <span id="logo"></span>
                 <div><a href="{{ route('main') }}">Головна</a> </div>
                 <div><a href="{{ route('catalog') }}">Каталог</a> </div>
-                <div>FAQ</div>
             </div>
         
         <div id="contacts">

@@ -18,15 +18,25 @@
                 <span id="logo"></span>
                 <div><a href="{{ route('main') }}">Головна</a> </div>
                 <div><a href="{{ route('contacts') }}">Контакти</a> </div>
-                <div>FAQ</div>
                 <div id="shopbag"></div>
             </div>
             <div id="contacts">
                 <div class="line"></div>
                 <div class="links">
-                    <span>Тип</span>
-                    <span>Колекції</span>
-                    <span>Знижки</span>
+                    <span id="categories-dropp">Тип
+                        <div class="dropdown" id="cat-dropdown">
+                            <a href="{{ route('catalog') }}?c=1"><div class="drop-item">Сережки</div></a> 
+                            <a href="{{ route('catalog') }}?c=2"><div class="drop-item">Підвіски</div></a> 
+                            <a href="{{ route('catalog') }}?c=3"><div class="drop-item">Каблучки</div></a> 
+                        </div>
+                    </span>
+                    <span id="seasons-dropp">Колекції
+                    <div class="dropdown" id="seas-dropdown">
+                            <a href="{{ route('catalog') }}?s=1"><div class="drop-item">Літня колекція</div></a> 
+                            <a href="{{ route('catalog') }}?s=2"><div class="drop-item">Осіння колекція</div></a> 
+                            <a href="{{ route('catalog') }}?s=3"><div class="drop-item">Зимова колекція</div></a> 
+                        </div>
+                    </span>
                 </div>
                 <div class="line"></div>
             </div>
