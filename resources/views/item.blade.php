@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="{{asset('img/logo.png')}}">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,100&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/item.css')}}">
     <link rel="stylesheet" href="{{asset('css/bag.css')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Details</title>
 </head>
 
 <body>
